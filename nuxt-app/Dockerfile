@@ -1,5 +1,7 @@
 FROM node:20-alpine
 WORKDIR /app
-COPY . .
+COPY .output ./.output
+COPY package.json package-lock.json* ./
+RUN npm ci --omit=dev || npm install --omit=dev
 EXPOSE 3000
-CMD ["node", ".output/server/index.mjs"] 
+CMD ["node", ".output/server/index.mjs"]
