@@ -3,5 +3,5 @@ WORKDIR /app
 COPY  . .
 RUN npm ci 
 RUN npm run build
-RUN npm run preview
 EXPOSE 3000
+CMD ["node", ".output/server/index.mjs"] 
