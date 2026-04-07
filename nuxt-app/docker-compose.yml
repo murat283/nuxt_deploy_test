@@ -1,11 +1,12 @@
 version: '3.8'
 
 services:
-  app:
+  nuxt:
     image: zlii01/nuxt-app
-    expose:
-      - "3000"
-
+    container_name: nuxt_app
+    restart: always
+    ports:
+      - "3000:3000"
   nginx:
     image: nginx:alpine
     ports:
