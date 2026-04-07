@@ -1,0 +1,1 @@
+import{_ as n,f as o,w as a,g as r,o as s,d as c}from"./BTH_AeFE.js";const _={};function f(i,e){const t=r;return s(),o(t,null,{default:a(()=>[...e[0]||(e[0]=[c("Welcome to experimental App",-1)])]),_:1})}const p=n(_,[["render",f]]);export{p as default};
