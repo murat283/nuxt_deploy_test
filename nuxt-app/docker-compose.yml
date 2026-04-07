@@ -13,6 +13,6 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx.conf.conf:/etc/nginx/conf.d/nginx.conf
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
     depends_on:
       - nuxt
